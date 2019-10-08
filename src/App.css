@@ -1,11 +1,26 @@
-.App {
+.center {
   text-align: center;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    
+  
+  }
 }
 
 .App-logo {
   height: 40vmin;
+  animation: shake infinite 1s
 }
-
+.secoue{
+    height: 40vmin;
+    
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
