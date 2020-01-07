@@ -46,9 +46,9 @@ class QuoteList extends React.Component {
   };
 
   getSimpsons = () => {
-    axios
-      .get("https://futuramaapi.herokuapp.com/api/quotes/5")
+    axios.get("https://futuramaapi.herokuapp.com/api/quotes/5")
       .then(data => {
+        console.log(data)
         // Une fois les données récupérées, on va mettre à jour notre state avec les nouvelles données
         this.setState({
           quotes: data.data
